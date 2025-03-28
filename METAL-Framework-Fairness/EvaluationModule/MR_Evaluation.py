@@ -247,28 +247,6 @@ def MR_Question_Answering(task, target):
     
     return MR_results, MR_EF_results, Perturb_qualities
 
-def STS_Ranking(org_text, pert_text): # Ranking distance metric for the average STS on each matched ranking
-    sts = []
-    for t1, t2 in zip(org_text, pert_text):
-        sts.append(np.inner(embed([t1]), embed([t2]))[0][0])
-        
-    return sum(sts) / len(sts)
-
-def Most_Similar_Ranking_Diff(org_text, pert_text): # Ranking distance for the average rank-index differences between the most similar items
-    ranking_diffs = []
-    for id1, t1 in enumerate(org_text):
-        max_sts = -1.0
-        max_id2 = -1
-        for id2, t2 in enumerate(pert_text):
-            sts = np.inner(embed([t1]), embed([t2]))[0][0]
-            if sts  > max_sts:
-                max_id2 = id2
-                max_sts = sts
-        ranking_diffs.append(abs(max_id2 - id1))
-
-    return sum(ranking_diffs) / len(ranking_diffs)
-
-
 def MR_ND_EQ(task, target):
     task_path = target + task + "/"
     
