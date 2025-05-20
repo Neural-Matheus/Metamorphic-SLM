@@ -1,5 +1,0 @@
-pandas
-nltk
-google-generativeai
-openai
-notebook

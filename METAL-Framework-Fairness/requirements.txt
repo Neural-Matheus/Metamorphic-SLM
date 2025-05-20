@@ -1,4 +1,0 @@
-pandas
-nltk
-google-generativeai
-openai
