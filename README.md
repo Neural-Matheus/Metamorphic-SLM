@@ -6,7 +6,7 @@ A Metamorphic Testing Framework for Analyzing Large-Language Model fairness with
 
 Execute the notebook files in the order that they are described to replicate the pipeline discribe in the paper
 
-In order to replicate, you need to download our *faiss* folder [here](https://1drv.ms/f/c/8c2f3df54b5402e1/EoIQeeyQGUJDs21KTllZzDIBzDrn9cX45A-TMcrr3u4i3Q?e=XkZcJp) and move it inside Execution Module folder 
+In order to replicate, you need to download our *faiss* folder [here](https://drive.google.com/drive/folders/1yWG_WZ_RgF1-aPChpK9pi6htg5jsynMu?usp=sharing) and move it inside Execution Module folder 
 
 - **Execution Module**: Communicates with LLMs to get the responses
   - Files:
